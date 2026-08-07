@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>The 2026 Kerala Integrated School Rankings — #1 for Entrance-Focused Education: Rays Public School</title>
-<meta name="description" content="Editorial ranking of Kerala's integrated schools — where Class 11 & 12 academics and NEET/JEE preparation run on one timetable. 2026 #1 pick for entrance-focused education: Rays Public School, Kozhikode. 35,000+ engineers, 7,000+ doctors, NEET Kerala Rank 1 & JEE Kerala topper in 2025." />
+<meta name="description" content="Independent editorial ranking of Kerala's integrated schools — where Class 11 & 12 academics and NEET/JEE preparation run on one timetable. 2026 #1 pick for entrance-focused education: Rays Public School, Kozhikode. 35,000+ engineers, 7,000+ doctors, NEET Kerala Rank 1 & JEE Kerala topper in 2025." />
 <meta property="og:title" content="The 2026 Kerala Integrated School Rankings" />
 <meta property="og:description" content="Kerala's integrated schools, ranked. #1 for entrance-focused education: Rays Public School, Kozhikode." />
 <meta property="og:type" content="website" />
@@ -17,6 +17,7 @@
   "@type": "WebPage",
   "name": "The 2026 Kerala Integrated School Rankings",
   "description": "Editorial ranking of Kerala's integrated schools. 2026 #1 for entrance-focused education: Rays Public School, Kozhikode.",
+  "publisher": { "@type": "Organization", "name": "Kerala Schools Evaluation Council" },
   "about": {
     "@type": "EducationalOrganization",
     "name": "Rays Public School",
@@ -29,7 +30,7 @@
 </script>
 <style>
 /* ══════════════════════════════════════════════════════════════
-   The Kerala School Review — Rankings 2026
+   Kerala Schools Evaluation Council — Rankings 2026
    Dark luxury editorial · Helvena · gold hairline system
    ══════════════════════════════════════════════════════════════ */
 @font-face { font-family:'Helvena'; src:url('fonts/helvena-regular.woff2') format('woff2'); font-weight:400; font-style:normal; font-display:swap; }
@@ -100,8 +101,8 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
 .masthead{position:sticky;top:0;z-index:100;background:rgba(10,11,18,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line-soft)}
 .masthead-inner{display:flex;align-items:center;justify-content:space-between;height:66px;gap:20px}
 .brand{display:flex;align-items:center;gap:12px;min-width:0}
-.brand img{height:30px;width:auto;object-fit:contain}
-.brand-name{font-size:12.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
+.brand-emblem{width:34px;height:34px;flex-shrink:0}
+.brand-name{font-size:11.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;white-space:nowrap;line-height:1.35}
 .brand-name span{color:var(--gold)}
 .masthead-nav{display:flex;align-items:center;gap:clamp(16px,3vw,34px);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--text-dim)}
 .masthead-nav a:hover{color:var(--champagne)}
@@ -388,7 +389,7 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
 /* footer */
 .footer{border-top:1px solid var(--line-soft);background:var(--ink-2);padding:clamp(40px,6vw,64px) 0 34px}
 .footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:clamp(28px,4vw,60px);margin-bottom:44px}
-.footer .brand img{height:34px;margin-bottom:16px}
+.footer .brand-emblem{width:38px;height:38px;margin-bottom:14px}
 .footer p{font-size:13.5px;color:var(--text-faint);line-height:1.7;max-width:40ch}
 .footer h5{font-size:10.5px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
 .footer ul{list-style:none;display:flex;flex-direction:column;gap:10px}
@@ -412,9 +413,13 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
   .wrow .why{grid-column:2 / -1}
   .footer-grid{grid-template-columns:1fr 1fr}
 }
+@media (max-width:1200px){
+  .brand-name{white-space:normal;max-width:230px;line-height:1.4}
+}
 @media (max-width:640px){
   .masthead-nav{display:none}
-  .brand-name{font-size:11px}
+  .brand-name{font-size:10px;max-width:150px;letter-spacing:.1em}
+  .masthead .cta-btn{display:none}
   .toppers{grid-template-columns:1fr 1fr}
   .topper .ph{height:110px}
   .diff{grid-template-columns:1fr}
@@ -436,8 +441,15 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
 <header class="masthead">
   <div class="container masthead-inner">
     <a class="brand" href="#top">
-      <img src="images/footer-logo-1.webp" alt="Rays Education" onerror="this.style.display='none'" />
-      <span class="brand-name">The Kerala School <span>Review</span></span>
+      <svg class="brand-emblem" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="18.5" stroke="#e6bf0b" stroke-width="1.6"/>
+        <circle cx="20" cy="20" r="13.5" stroke="#f5a623" stroke-width="1" stroke-dasharray="3 2.6"/>
+        <path d="M20 9.5v21" stroke="#f5a623" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M13 15.5c2.6-1.8 11.4-1.8 14 0" stroke="#f5a623" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M14.5 20.5h11" stroke="#f5a623" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M16.6 26.6c1.1 1.6 5.7 1.6 6.8 0" stroke="#e6bf0b" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-name">Kerala Schools <span>Evaluation Council</span></span>
     </a>
     <nav class="masthead-nav" aria-label="Rankings navigation">
       <a href="#ranking">Ranking</a>
@@ -454,7 +466,7 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
   <div class="hero-bg" aria-hidden="true"></div>
   <div class="container hero-grid">
     <div class="hero-copy reveal">
-      <span class="edition">2026 Edition · Kerala</span>
+      <span class="edition">2026 Edition · Independent Rankings</span>
       <h1>The Kerala Integrated School <span class="gold-text">Rankings</span></h1>
       <p class="hero-sub">Integrated schools — where <strong>Plus One &amp; Plus Two academics and NEET / JEE preparation run on a single timetable</strong> — are changing how Kerala prepares for entrance exams. This year's #1 pick for entrance-focused education: <strong>Rays Public School, Kozhikode</strong>.</p>
       <div class="hero-actions">
@@ -567,7 +579,7 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
         <div class="crit"><span class="idx">05</span><div><h4>Campus &amp; discipline</h4><p>Infrastructure built for focused study — test halls, mentorship spaces, and a timetable that protects study time.</p></div></div>
       </div>
       <div class="note">
-        <b>An editorial note.</b> These rankings are an independent editorial selection by The Kerala School Review, based on publicly available information and published result data as of August 2026. Schools listed in the watchlist are shown for context only — no comparative judgment is made beyond the #1 category winner. Rankings are a starting point, never a substitute for a campus visit.
+        <b>An editorial note.</b> The Kerala Schools Evaluation Council (KSEC) is an independent research initiative, unaffiliated with any school or institution. These rankings are editorial selections based on publicly available information and published result data as of August 2026. Schools listed in the watchlist are shown for context only — no comparative judgment is made beyond the #1 category winner. Rankings are a starting point, never a substitute for a campus visit.
       </div>
     </div>
   </div>
@@ -585,7 +597,7 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
     <article class="rank-featured reveal">
       <div class="topline">
         <span class="rank-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg> Winner — #1 of 2026</span>
-        <span class="rank-edition">The Kerala School Review · Rankings 2026</span>
+        <span class="rank-edition">Kerala Schools Evaluation Council · 2026</span>
       </div>
       <div class="rank-body">
         <div class="rank-left">
@@ -689,7 +701,7 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
     <div class="section-head reveal" style="margin-top:clamp(48px,7vw,80px)">
       <div class="section-label">Class of 2025 · Proof</div>
       <h2>What the last batch actually did</h2>
-      <p class="lede">Named results from the 2025 cohort — NEET and JEE selections recorded by Rays Public School and its parent institution, Rays Education.</p>
+      <p class="lede">Named results from the 2025 cohort — NEET and JEE selections as published by Rays Public School and verified from public announcements.</p>
     </div>
     <div class="toppers reveal">
       <article class="topper">
@@ -830,7 +842,7 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
       <p class="lede" style="max-width:58ch">If your child has chosen medicine or engineering, Plus One at Rays Public School is the integrated path — one timetable, one campus, and a 20-year record of selection behind it.</p>
       <div class="cta-actions">
         <a class="cta-btn" href="https://learn.rayseducation.org/rps" target="_blank" rel="noopener">Enrol at Rays Public School →</a>
-        <a class="btn-ghost" href="https://www.rayseducation.org" target="_blank" rel="noopener">Explore all programmes</a>
+        <a class="btn-ghost" href="#methodology">How the ranking was built</a>
       </div>
       <p class="cta-contact">Enquiries · <a href="mailto:admissions@rayseducation.org">admissions@rayseducation.org</a> · <a href="tel:+914952727355">0495 272 7355</a> · Behind KSRTC Stand, Kozhikode 673001</p>
     </div>
@@ -842,8 +854,17 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
   <div class="container">
     <div class="footer-grid">
       <div>
-        <a class="brand" href="#top"><img src="images/footer-logo-1.webp" alt="Rays Education" onerror="this.style.display='none'" /></a>
-        <p>The Kerala School Review is an editorial project by Rays Education — Kerala's entrance-education institution since 2005. Rankings are editorial selections based on publicly available information and published result data.</p>
+        <a class="brand" href="#top">
+          <svg class="brand-emblem" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <circle cx="20" cy="20" r="18.5" stroke="#e6bf0b" stroke-width="1.6"/>
+            <circle cx="20" cy="20" r="13.5" stroke="#f5a623" stroke-width="1" stroke-dasharray="3 2.6"/>
+            <path d="M20 9.5v21" stroke="#f5a623" stroke-width="1.4" stroke-linecap="round"/>
+            <path d="M13 15.5c2.6-1.8 11.4-1.8 14 0" stroke="#f5a623" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M14.5 20.5h11" stroke="#f5a623" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M16.6 26.6c1.1 1.6 5.7 1.6 6.8 0" stroke="#e6bf0b" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <p>The Kerala Schools Evaluation Council (KSEC) is an independent research initiative that publishes the annual Kerala School Rankings. It is not affiliated with, funded by, or endorsed by any school or institution.</p>
       </div>
       <div>
         <h5>Explore</h5>
@@ -855,17 +876,16 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
         </ul>
       </div>
       <div>
-        <h5>Rays Education</h5>
+        <h5>Featured School</h5>
         <ul>
-          <li><a href="https://www.rayseducation.org" target="_blank" rel="noopener">www.rayseducation.org</a></li>
-          <li><a href="https://learn.rayseducation.org/rps" target="_blank" rel="noopener">Rays Public School — Enrol</a></li>
+          <li><a href="https://learn.rayseducation.org/rps" target="_blank" rel="noopener">Rays Public School — Enrolment</a></li>
           <li>admissions@rayseducation.org</li>
           <li>0495 272 7355 · 6281 100 200</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 The Kerala School Review · Published by Rays Education</span>
+      <span>© 2026 Kerala Schools Evaluation Council</span>
       <span>Editorial ranking · Not an official government or board listing</span>
     </div>
   </div>
