@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>The 2026 Kerala Integrated School Rankings — #1 for Entrance-Focused Education: Rays Public School</title>
+<title>The 2026 Kerala School Rankings — Top 10 Government, Private &amp; Integrated Schools</title>
 <meta name="description" content="Independent editorial ranking of Kerala's integrated schools — where Class 11 & 12 academics and NEET/JEE preparation run on one timetable. 2026 #1 pick for entrance-focused education: Rays Public School, Kozhikode. 35,000+ engineers, 7,000+ doctors, NEET Kerala Rank 1 & JEE Kerala topper in 2025." />
-<meta property="og:title" content="The 2026 Kerala Integrated School Rankings" />
-<meta property="og:description" content="Kerala's integrated schools, ranked. #1 for entrance-focused education: Rays Public School, Kozhikode." />
+<meta property="og:title" content="The 2026 Kerala School Rankings" />
+<meta property="og:description" content="Kerala's schools, ranked in three tables — Top 10 Government, Top 10 Private, Top 10 Integrated. 2026 #1 for entrance-focused education: Rays Public School, Kozhikode." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="images/mock-test-hall.webp" />
 <meta name="theme-color" content="#0a0b12" />
@@ -15,8 +15,8 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "The 2026 Kerala Integrated School Rankings",
-  "description": "Editorial ranking of Kerala's integrated schools. 2026 #1 for entrance-focused education: Rays Public School, Kozhikode.",
+  "name": "The 2026 Kerala School Rankings",
+  "description": "Editorial ranking of Kerala's schools in three tables — Top 10 Government, Top 10 Private and Top 10 Integrated. 2026 #1 for entrance-focused education: Rays Public School, Kozhikode.",
   "publisher": { "@type": "Organization", "name": "Kerala School Quality Index" },
   "about": {
     "@type": "EducationalOrganization",
@@ -290,6 +290,18 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
 .wrow .why{color:var(--text-faint);font-size:13px;line-height:1.5}
 .wtable .whead{font-size:10px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--text-faint);padding:14px clamp(16px,2.6vw,28px);background:rgba(255,255,255,.02)}
 
+/* category nav + ranked tables */
+.cat-nav{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+a.cat-card{text-decoration:none;color:inherit}
+.cat-card{display:flex;flex-direction:column;gap:6px;border:1px solid var(--line-soft);border-radius:16px;padding:22px;background:var(--ink-2);transition:border-color .3s,transform .3s}
+.cat-card:hover{border-color:var(--line);transform:translateY(-3px)}
+.cat-card.gold{border-color:rgba(245,198,74,.4);background:linear-gradient(160deg,rgba(245,198,74,.07),rgba(245,198,74,.01))}
+.cat-no{font-size:11px;font-weight:800;letter-spacing:.24em;color:var(--gold)}
+.cat-t{font-size:17px;font-weight:800;color:var(--text)}
+.cat-s{font-size:12px;color:var(--text-faint);letter-spacing:.06em}
+.wrow .pos.rk{font-size:15px;color:var(--gold)}
+.table-src{margin-top:14px;font-size:12px;color:var(--text-faint);letter-spacing:.04em;max-width:72ch;line-height:1.6}
+
 /* ═══ Spotlight ═══ */
 .spotlight{background:linear-gradient(180deg,transparent,rgba(19,22,35,.55) 12%,rgba(19,22,35,.55) 88%,transparent)}
 .spot-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,56px);align-items:start}
@@ -418,6 +430,7 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
 }
 @media (max-width:640px){
   .masthead-nav{display:none}
+  .cat-nav{grid-template-columns:1fr}
   .brand-name{font-size:10px;max-width:150px;letter-spacing:.1em}
   .masthead .cta-btn{display:none}
   .toppers{grid-template-columns:1fr 1fr}
@@ -452,7 +465,7 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
       <span class="brand-name">Kerala School <span>Quality Index</span></span>
     </a>
     <nav class="masthead-nav" aria-label="Rankings navigation">
-      <a href="#ranking">Ranking</a>
+      <a href="#rankings">Rankings</a>
       <a href="#methodology">Methodology</a>
       <a href="#spotlight">Spotlight</a>
       <a href="#faq">FAQ</a>
@@ -467,10 +480,10 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
   <div class="container hero-grid">
     <div class="hero-copy reveal">
       <span class="edition">2026 Edition · Independent Rankings</span>
-      <h1>The Kerala Integrated School <span class="gold-text">Rankings</span></h1>
-      <p class="hero-sub">Integrated schools — where <strong>Plus One &amp; Plus Two academics and NEET / JEE preparation run on a single timetable</strong> — are changing how Kerala prepares for entrance exams. This year's #1 pick for entrance-focused education: <strong>Rays Public School, Kozhikode</strong>.</p>
+      <h1>The Kerala School <span class="gold-text">Rankings</span></h1>
+      <p class="hero-sub">Three tables for 2026 — <strong>Top 10 Government, Top 10 Private and Top 10 Integrated schools</strong> — scored on published results and structural depth, cross-checked against national school rankings. This year's #1 for entrance-focused education: <strong>Rays Public School, Kozhikode</strong>.</p>
       <div class="hero-actions">
-        <a class="cta-btn" href="#ranking">See the 2026 Ranking ↓</a>
+        <a class="cta-btn" href="#rankings">See the 2026 Rankings ↓</a>
         <a class="btn-ghost" href="#spotlight">Why Rays Public School is #1</a>
       </div>
       <div class="hero-meta">
@@ -517,7 +530,7 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
   <div class="container">
     <div class="two-col">
       <div class="body-copy reveal">
-        <div class="section-label">01 · The Model</div>
+        <div class="section-label">02 · The Model</div>
         <h2 style="font-size:clamp(30px,4.2vw,52px);font-weight:900;margin:16px 0 20px">What is an integrated school?</h2>
         <p>An integrated school folds <strong>board education and entrance preparation into one academic system</strong>. Class 11 and 12 students follow a single timetable — school subjects in the morning, NEET / JEE modules in the afternoon, full-length mock tests on Saturdays — instead of finishing school and commuting to a separate coaching centre every evening.</p>
         <p class="pull">One timetable. One campus. No evening commute. The board syllabus and the entrance syllabus finally work together instead of competing.</p>
@@ -535,7 +548,7 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
 <section class="section" id="model" style="padding-top:0">
   <div class="container">
     <div class="section-head reveal">
-      <div class="section-label">02 · A Day Inside The Model</div>
+      <div class="section-label">03 · A Day Inside The Model</div>
       <h2>The timetable that makes integration real</h2>
       <p class="lede">An integrated school is only as good as its schedule. This is the day the 2026 #1 pick runs — every school day of Plus One and Plus Two.</p>
     </div>
@@ -566,32 +579,88 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
 <section class="section" id="methodology" style="padding-top:0">
   <div class="container">
     <div class="section-head reveal">
-      <div class="section-label">03 · Methodology</div>
+      <div class="section-label">04 · Methodology</div>
       <h2>How this ranking was decided</h2>
-      <p class="lede">Five criteria, applied to every school shortlisted for entrance-focused education. The scoring favours published results and structural depth over reputation alone.</p>
+      <p class="lede">Five criteria, applied across all three tables. For Government and Private schools, published national positions and board results carry the weight; for Integrated schools, entrance results and structural depth decide the order.</p>
     </div>
     <div class="method-wrap reveal">
       <div class="criteria">
-        <div class="crit"><span class="idx">01</span><div><h4>Published entrance track record</h4><p>NEET / JEE results produced by the school's own students — verified from public result announcements and institute publications, not marketing claims.</p></div></div>
+        <div class="crit"><span class="idx">01</span><div><h4>Published results track record</h4><p>NEET / JEE results for the integrated table; board results and published national ranking positions for government and private tables — verified from public announcements, not marketing claims.</p></div></div>
         <div class="crit"><span class="idx">02</span><div><h4>Depth of integration</h4><p>Is entrance preparation inside the timetable, or an after-school add-on? Schools that bolt coaching on after a full school day lose points on fatigue and syllabus drift.</p></div></div>
         <div class="crit"><span class="idx">03</span><div><h4>Faculty &amp; mentorship</h4><p>Subject specialists plus mentors who have themselves cleared NEET / JEE — measured by published faculty credentials.</p></div></div>
         <div class="crit"><span class="idx">04</span><div><h4>Parent visibility</h4><p>Structured, scheduled progress reporting. Parents should hear how a child is tracking before the result, not after.</p></div></div>
         <div class="crit"><span class="idx">05</span><div><h4>Campus &amp; discipline</h4><p>Infrastructure built for focused study — test halls, mentorship spaces, and a timetable that protects study time.</p></div></div>
       </div>
       <div class="note">
-        <b>An editorial note.</b> The Kerala School Quality Index (KSQI) is an independent research initiative, unaffiliated with any school or institution. These rankings are editorial selections based on publicly available information and published result data as of August 2026. Schools listed in the watchlist are shown for context only — no comparative judgment is made beyond the #1 category winner. Rankings are a starting point, never a substitute for a campus visit.
+        <b>An editorial note.</b> The Kerala School Quality Index (KSQI) is an independent research initiative, unaffiliated with any school or institution. These rankings are editorial selections based on publicly available information, published national school rankings (EWISR 2025-26, as publicly reported) and public result data as of August 2026. Where a national category position exists, it is shown inside the table itself. Rankings are a starting point, never a substitute for a campus visit.
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════ 04 · THE RANKING ═══════════ -->
-<section class="section" id="ranking" style="padding-top:0">
+<!-- ═══════════ 01 · THE 2026 RANKINGS ═══════════ -->
+<section class="section" id="rankings" style="padding-top:0">
   <div class="container">
     <div class="section-head reveal">
-      <div class="section-label">04 · The 2026 Ranking</div>
-      <h2>Best integrated school for <span class="gold-text">entrance-focused education</span></h2>
-      <p class="lede">Category winner, selected on the five criteria above. The 2025 batch alone produced a NEET Kerala Rank 1, a JEE Kerala topper and a 686 / 720 NEET score.</p>
+      <div class="section-label">01 · The 2026 Rankings</div>
+      <h2>Three tables. <span class="gold-text">One standard.</span></h2>
+      <p class="lede">Kerala's schools, ranked across three categories — Government, Private and Integrated — on the five criteria in the methodology, and cross-checked against published national rankings and public result data.</p>
+    </div>
+
+    <div class="cat-nav reveal" style="margin-bottom:clamp(16px,2.5vw,28px)">
+      <a class="cat-card" href="#rank-gov"><span class="cat-no">TABLE A</span><span class="cat-t">Government Schools</span><span class="cat-s">Top 10 · State &amp; Central</span></a>
+      <a class="cat-card" href="#rank-private"><span class="cat-no">TABLE B</span><span class="cat-t">Private Schools</span><span class="cat-s">Top 10 · CBSE · ICSE · IB</span></a>
+      <a class="cat-card gold" href="#rank-integrated"><span class="cat-no">TABLE C</span><span class="cat-t">Integrated Schools</span><span class="cat-s">Top 10 · Entrance-Focused</span></a>
+    </div>
+
+    <!-- A · GOVERNMENT -->
+    <div class="watch-head reveal" id="rank-gov">
+      <h3>Top 10 Government Schools</h3>
+      <span class="note-sm">State &amp; Central government schools · positions vs EWISR 2025-26</span>
+    </div>
+    <div class="wtable reveal">
+      <div class="wrow whead">
+        <span>#</span><span>School</span><span>City</span><span>Board</span><span>Why it makes the list</span>
+      </div>
+      <div class="wrow"><span class="pos rk">01</span><span class="school">Government VHSS for Girls, Nadakkavu</span><span class="city">Kozhikode</span><span class="board">State</span><span class="why">All-India #2 among state government day schools — EWISR 2025-26, retaining last year's position.</span></div>
+      <div class="wrow"><span class="pos rk">02</span><span class="school">Kendriya Vidyalaya, Pattom</span><span class="city">Thiruvananthapuram</span><span class="board">CBSE</span><span class="why">All-India #9 among central government day schools — EWISR 2025-26 (top-10 nationally for two consecutive years).</span></div>
+      <div class="wrow"><span class="pos rk">03</span><span class="school">Jawahar Navodaya Vidyalaya, Chennithala</span><span class="city">Alappuzha</span><span class="board">CBSE</span><span class="why">All-India #8 among central government boarding schools — EWISR 2025-26.</span></div>
+      <div class="wrow"><span class="pos rk">04</span><span class="school">Navy Children School</span><span class="city">Kochi</span><span class="board">CBSE</span><span class="why">All-India #12 among central government day schools — EWISR 2025-26.</span></div>
+      <div class="wrow"><span class="pos rk">05</span><span class="school">Kendriya Vidyalaya No. 2, Naval Base</span><span class="city">Kochi</span><span class="board">CBSE</span><span class="why">All-India #18 among central government day schools — EWISR 2025-26.</span></div>
+      <div class="wrow"><span class="pos rk">06</span><span class="school">Army Public School, Pangode</span><span class="city">Thiruvananthapuram</span><span class="board">CBSE</span><span class="why">All-India #29 among central government day schools — EWISR 2025-26.</span></div>
+      <div class="wrow"><span class="pos rk">07</span><span class="school">Cotton Hill Government Girls HSS</span><span class="city">Thiruvananthapuram</span><span class="board">State</span><span class="why">The capital's landmark government girls' school and a consistent state-board performer.</span></div>
+      <div class="wrow"><span class="pos rk">08</span><span class="school">Government Model HSS</span><span class="city">Thiruvananthapuram</span><span class="board">State</span><span class="why">One of Kerala's oldest government schools, with a deep academic heritage.</span></div>
+      <div class="wrow"><span class="pos rk">09</span><span class="school">Government Brennen HSS</span><span class="city">Thalassery, Kannur</span><span class="board">State</span><span class="why">Part of Thalassery's historic Brennen educational legacy, dating to the 1800s.</span></div>
+      <div class="wrow"><span class="pos rk">10</span><span class="school">Government Ganapath HSS</span><span class="city">Kozhikode</span><span class="board">State</span><span class="why">One of Kozhikode's oldest government schools and a long-standing Malabar institution.</span></div>
+    </div>
+    <p class="table-src reveal">National category positions are from the EducationWorld India School Rankings (EWISR) 2025-26, as publicly reported. Final order is KSQI's editorial selection.</p>
+
+    <!-- B · PRIVATE -->
+    <div class="watch-head reveal" id="rank-private">
+      <h3>Top 10 Private Schools</h3>
+      <span class="note-sm">Independent schools · CBSE · ICSE · IB · positions vs EWISR 2025-26 &amp; 2024-25</span>
+    </div>
+    <div class="wtable reveal">
+      <div class="wrow whead">
+        <span>#</span><span>School</span><span>City</span><span>Board</span><span>Why it makes the list</span>
+      </div>
+      <div class="wrow"><span class="pos rk">01</span><span class="school">Pallikoodam</span><span class="city">Kottayam</span><span class="board">ICSE</span><span class="why">All-India #4 among co-ed day-cum-boarding schools — EWISR 2025-26 (national top-3 the two prior years).</span></div>
+      <div class="wrow"><span class="pos rk">02</span><span class="school">Sadbhavana World School</span><span class="city">Kozhikode</span><span class="board">IB · Cambridge</span><span class="why">All-India #6 among international day-cum-boarding schools — EWISR 2025-26, up from #9.</span></div>
+      <div class="wrow"><span class="pos rk">03</span><span class="school">The White School International</span><span class="city">Kozhikode</span><span class="board">IB</span><span class="why">All-India #12 among international day-cum-boarding schools — EWISR 2025-26.</span></div>
+      <div class="wrow"><span class="pos rk">04</span><span class="school">Trivandrum International School</span><span class="city">Thiruvananthapuram</span><span class="board">IB · IGCSE</span><span class="why">All-India #19 among international day-cum-boarding schools — EWISR 2025-26.</span></div>
+      <div class="wrow"><span class="pos rk">05</span><span class="school">The Choice School</span><span class="city">Kochi</span><span class="board">CBSE</span><span class="why">All-India #17 among co-ed day-cum-boarding schools — EWISR 2025-26.</span></div>
+      <div class="wrow"><span class="pos rk">06</span><span class="school">Lourdes Public School &amp; Junior College</span><span class="city">Kottayam</span><span class="board">CBSE</span><span class="why">Kerala #1 among co-ed day schools — EWISR 2024-25.</span></div>
+      <div class="wrow"><span class="pos rk">07</span><span class="school">St. Antony's Public School</span><span class="city">Kanjirapally, Kottayam</span><span class="board">CBSE</span><span class="why">Kerala #2 among co-ed day schools — EWISR 2024-25.</span></div>
+      <div class="wrow"><span class="pos rk">08</span><span class="school">Rajagiri Christu Jayanthi Public School</span><span class="city">Kochi</span><span class="board">CBSE</span><span class="why">Kerala #3 among co-ed day schools — EWISR 2024-25.</span></div>
+      <div class="wrow"><span class="pos rk">09</span><span class="school">Global Public School</span><span class="city">Kochi</span><span class="board">CBSE</span><span class="why">Kerala #3 among co-ed day-cum-boarding schools — EWISR 2024-25.</span></div>
+      <div class="wrow"><span class="pos rk">10</span><span class="school">Delhi Public School</span><span class="city">Kollam</span><span class="board">CBSE</span><span class="why">All-India #37 among co-ed day-cum-boarding schools — EWISR 2025-26.</span></div>
+    </div>
+    <p class="table-src reveal">Category positions are from the EducationWorld India School Rankings (EWISR) 2025-26 and 2024-25, as publicly reported. Final order is KSQI's editorial selection.</p>
+
+    <!-- C · INTEGRATED -->
+    <div class="watch-head reveal" id="rank-integrated">
+      <h3>Top 10 Integrated Schools</h3>
+      <span class="note-sm">School + entrance coaching on one timetable · 2026 category winner below</span>
     </div>
 
     <article class="rank-featured reveal">
@@ -642,22 +711,25 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
       </div>
     </article>
 
-    <!-- watchlist -->
-    <div class="watch-head reveal">
-      <h3>Also on parents' shortlists</h3>
-      <span class="note-sm">Editorial context only · not ranked against the #1 pick</span>
+    <div class="watch-head reveal" style="margin-top:clamp(36px,5vw,56px)">
+      <h3>The rest of the Top 10</h3>
+      <span class="note-sm">Ranks 2–10 · editorial selection</span>
     </div>
     <div class="wtable reveal">
       <div class="wrow whead">
-        <span>#</span><span>School</span><span>City</span><span>Board</span><span>Why parents shortlist it</span>
+        <span>#</span><span>School</span><span>Campus</span><span>Focus</span><span>Why it makes the list</span>
       </div>
-      <div class="wrow"><span class="pos">—</span><span class="school">Rajagiri Public School</span><span class="city">Kochi</span><span class="board">CBSE</span><span class="why">One of Kerala's most established CBSE names, with a long track record of school results.</span></div>
-      <div class="wrow"><span class="pos">—</span><span class="school">Kendriya Vidyalaya</span><span class="city">Multiple districts</span><span class="board">CBSE</span><span class="why">Central-government network known for consistency and fee structure.</span></div>
-      <div class="wrow"><span class="pos">—</span><span class="school">Chinmaya Vidyalaya</span><span class="city">Kannur &amp; wider Malabar</span><span class="board">CBSE</span><span class="why">Long-running Malabar institution with a strong CBSE presence.</span></div>
-      <div class="wrow"><span class="pos">—</span><span class="school">Bhavan's Vidya Mandir</span><span class="city">Eroor, Kochi</span><span class="board">CBSE</span><span class="why">Established Kochi school under the Bharatiya Vidya Bhavan network.</span></div>
-      <div class="wrow"><span class="pos">—</span><span class="school">GEMS Public School</span><span class="city">Kooriyad, Malappuram</span><span class="board">CBSE</span><span class="why">Growing Malappuram catchment with a reputation for academic focus.</span></div>
-      <div class="wrow"><span class="pos">—</span><span class="school">St. Joseph's Boys' HSS</span><span class="city">Kozhikode</span><span class="board">State</span><span class="why">Historic Kozhikode institution, a familiar state-syllabus choice for families.</span></div>
+      <div class="wrow"><span class="pos rk">02</span><span class="school">Brilliant Study Centre — Integrated Programme</span><span class="city">Pala, Kottayam</span><span class="board">NEET · JEE</span><span class="why">Kerala's best-known entrance institution; school-tie-up integrated IIT / AIIMS programmes.</span></div>
+      <div class="wrow"><span class="pos rk">03</span><span class="school">ALPS Academy — AlpsDopa Integrated School</span><span class="city">Kozhikode</span><span class="board">NEET · JEE</span><span class="why">Self-described first and largest integrated school run by doctors and IITians — Plus One &amp; Plus Two with entrance built in.</span></div>
+      <div class="wrow"><span class="pos rk">04</span><span class="school">Alpha Academy — Science Integrated School</span><span class="city">Ernakulam</span><span class="board">NEET · JEE · KEAM</span><span class="why">+1 / +2 science integrated programme combining the board syllabus with entrance coaching.</span></div>
+      <div class="wrow"><span class="pos rk">05</span><span class="school">Aegon Learning Integrated School</span><span class="city">Kozhikode &amp; Kannur</span><span class="board">NEET · JEE</span><span class="why">Multi-campus CBSE-integrated higher-secondary education with entrance coaching.</span></div>
+      <div class="wrow"><span class="pos rk">06</span><span class="school">Zaitoon International Campus</span><span class="city">Pattambi · Kottakkal · Payyannur</span><span class="board">NEET · JEE</span><span class="why">Residential entrance campuses for boys and girls, running since 2017.</span></div>
+      <div class="wrow"><span class="pos rk">07</span><span class="school">Xylem Learning — +1/+2 Integrated Programme</span><span class="city">Kozhikode</span><span class="board">NEET · JEE · KEAM</span><span class="why">High-growth learning platform running +1/+2 entrance-integrated school programmes.</span></div>
+      <div class="wrow"><span class="pos rk">08</span><span class="school">Chaithanya Classes — Prof. P.C. Thomas</span><span class="city">Thrissur</span><span class="board">NEET · JEE · KEAM</span><span class="why">Legacy Thrissur institution with a school-tie-up integrated model and a long results record.</span></div>
+      <div class="wrow"><span class="pos rk">09</span><span class="school">Aakash Institute</span><span class="city">Kochi · Kozhikode</span><span class="board">NEET · JEE</span><span class="why">National entrance major running integrated classroom programmes in Kerala.</span></div>
+      <div class="wrow"><span class="pos rk">10</span><span class="school">Gokulam EdFuture</span><span class="city">Kozhikode</span><span class="board">NEET · JEE</span><span class="why">Entrance campus backed by Kozhikode's Gokulam education group.</span></div>
     </div>
+    <p class="table-src reveal">Integrated-table positions are KSQI's editorial selection from publicly available information on each institution's published programmes and results, as of August 2026.</p>
   </div>
 </section>
 
@@ -810,6 +882,10 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
         <div class="ans">A school that delivers <b>board education and entrance preparation as one system</b>. Class 11 &amp; 12 students follow a single timetable — school subjects in the morning, NEET / JEE modules in the afternoon, mock tests on Saturdays — on one campus. The alternative is finishing school and commuting to a separate coaching centre every evening.</div>
       </details>
       <details class="faq">
+        <summary>How are the Government and Private Top 10s decided? <span class="plus">+</span></summary>
+        <div class="ans">From publicly reported national positions — the EducationWorld India School Rankings (EWISR) 2025-26 and 2024-25 — and published board results, ordered editorially on the five criteria in the methodology. Where a national category position exists, it is shown inside the table itself. Nothing in the tables is invented.</div>
+      </details>
+      <details class="faq">
         <summary>Why is Rays Public School ranked #1 for entrance-focused education? <span class="plus">+</span></summary>
         <div class="ans">On the five published criteria: a <b>verifiable entrance record</b> (NEET Kerala Rank 1, JEE Kerala topper, 686 / 720 NEET in 2025), <b>true integration</b> (entrance modules inside the school timetable), <b>specialist faculty</b> (AIIMS / JIPMER alumni for Biology, JEE Advanced specialists for Maths), <b>parent visibility</b> (weekly progress reviews) and a <b>campus built for focused study</b> — all standing on 20 years and 35,000+ engineers / 7,000+ doctors of entrance-coaching history.</div>
       </details>
@@ -867,11 +943,12 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.08}
         <p>The Kerala School Quality Index (KSQI) is an independent research initiative that publishes the annual Kerala School Rankings. It is not affiliated with, funded by, or endorsed by any school or institution.</p>
       </div>
       <div>
-        <h5>Explore</h5>
+        <h5>The 2026 Rankings</h5>
         <ul>
-          <li><a href="#ranking">The 2026 Ranking</a></li>
+          <li><a href="#rank-gov">Top 10 Government Schools</a></li>
+          <li><a href="#rank-private">Top 10 Private Schools</a></li>
+          <li><a href="#rank-integrated">Top 10 Integrated Schools</a></li>
           <li><a href="#methodology">Methodology</a></li>
-          <li><a href="#spotlight">Winner Spotlight</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </div>
