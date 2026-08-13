@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta name="theme-color" content="#de1b7c" />
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-<link rel="stylesheet" href="styles.css?v=the" />
+<link rel="stylesheet" href="styles.css?v=the2" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -207,6 +207,7 @@
 </footer>
 <script>
 (function(){
+  document.documentElement.classList.add('js');
   var io = new IntersectionObserver(function(entries){
     entries.forEach(function(e){
       if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
