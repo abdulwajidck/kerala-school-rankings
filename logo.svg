@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 144" role="img" aria-label="KSQI — Kerala School Quality Index">
+  <title>KSQI — Kerala School Quality Index</title>
+  <defs>
+    <linearGradient id="key" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#4352ff"/>
+      <stop offset=".55" stop-color="#de1b7c"/>
+      <stop offset="1" stop-color="#fe4537"/>
+    </linearGradient>
+    <linearGradient id="keyV" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#4352ff"/>
+      <stop offset="1" stop-color="#fe4537"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ===== Mark: three ascending bars, capping with a keystone No.1 ===== -->
+  <g>
+    <rect x="16" y="76" width="16" height="52" rx="4" fill="url(#keyV)" opacity="0.42"/>
+    <rect x="40" y="56" width="16" height="72" rx="4" fill="url(#keyV)" opacity="0.7"/>
+    <rect x="64" y="36" width="16" height="92" rx="4" fill="url(#key)"/>
+
+    <!-- keystone dot over the tallest bar = the No.1 / index cap -->
+    <circle cx="72" cy="18" r="7" fill="#232323"/>
+
+    <!-- thin baseline anchoring the mark -->
+    <rect x="16" y="130" width="64" height="2.5" rx="1.25" fill="#232323" opacity="0.25"/>
+  </g>
+
+  <!-- ===== Wordmark ===== -->
+  <text x="104" y="83" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" letter-spacing="1" fill="#232323">KSQI</text>
+
+  <!-- ===== Descriptor ===== -->
+  <rect x="106" y="97.5" width="34" height="2.5" rx="1.25" fill="url(#key)"/>
+  <text x="154" y="103" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2.4" fill="#595959">KERALA SCHOOL QUALITY INDEX</text>
+
+  <!-- ===== Vertical divider (optional lockup variant removed) ===== -->
+  <!--
+  <rect x="104" y="36" width="1" height="72" fill="#e9e9e9"/>
+  -->
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="KSQI mark">
+  <title>KSQI mark</title>
+  <defs>
+    <linearGradient id="keyV" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#4352ff"/>
+      <stop offset="1" stop-color="#fe4537"/>
+    </linearGradient>
+    <linearGradient id="key" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#4352ff"/>
+      <stop offset=".55" stop-color="#de1b7c"/>
+      <stop offset="1" stop-color="#fe4537"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="21" y="56" width="14" height="28" rx="3.5" fill="url(#keyV)" opacity="0.42"/>
+  <rect x="41" y="42" width="14" height="42" rx="3.5" fill="url(#keyV)" opacity="0.7"/>
+  <rect x="61" y="28" width="14" height="56" rx="3.5" fill="url(#key)"/>
+
+  <circle cx="68" cy="14" r="6.5" fill="#232323"/>
+  <rect x="21" y="88" width="54" height="2" rx="1" fill="#232323" opacity="0.25"/>
+</svg>
