@@ -255,7 +255,7 @@ h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;line-height:1.15;font-family:va
 .watch-head h3{font-size:clamp(22px,2.6vw,30px)}
 .watch-head .note-sm{font-size:12px;color:var(--text-faint);letter-spacing:.04em}
 .wtable{border:1px solid var(--line);border-radius:4px;overflow:hidden;background:var(--paper)}
-.wrow{display:grid;grid-template-columns:56px 64px 1.25fr .9fr .7fr 1.6fr;gap:14px;align-items:center;padding:16px clamp(16px,2.6vw,24px);border-bottom:1px solid var(--line);font-size:14px;transition:background .2s}
+.wrow{display:grid;grid-template-columns:56px 1.25fr .9fr .7fr 1.6fr;gap:14px;align-items:center;padding:16px clamp(16px,2.6vw,24px);border-bottom:1px solid var(--line);font-size:14px;transition:background .2s}
 .wrow:last-child{border-bottom:none}
 .wrow:hover{background:var(--paper-2)}
 .wrow .pos{font-size:13px;font-weight:800;letter-spacing:.06em;color:var(--text-faint)}
@@ -458,9 +458,13 @@ a.winner-card:hover{border-color:var(--ink);box-shadow:0 12px 28px rgba(22,22,29
   .diff{grid-template-columns:repeat(2,1fr)}
   .toppers{grid-template-columns:repeat(2,1fr)}
   .faculty{grid-template-columns:1fr}
-  .wrow{grid-template-columns:44px 48px 1fr 1fr;grid-auto-rows:auto;row-gap:4px}
-  .wrow .wimg{width:48px;height:34px}
+  .wrow{grid-template-columns:36px minmax(0,1fr) minmax(0,1fr);grid-auto-rows:auto;gap:8px 12px}
+  .wrow > span{min-width:0;overflow-wrap:anywhere}
+  .wrow .school{grid-column:2 / -1}
+  .wrow .city{grid-column:2}
+  .wrow .board{grid-column:3}
   .wrow .why{grid-column:2 / -1}
+  .wrow.whead{display:none}
   .footer-grid{grid-template-columns:1fr 1fr}
   .winners{grid-template-columns:1fr}
   .admit-facts{border-left:none;padding-left:0;border-top:1px solid var(--line);padding-top:18px}
